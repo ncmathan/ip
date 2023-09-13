@@ -18,8 +18,22 @@ public class Ui {
     }
 
     /**
-     * Returns welcome message.
+     * reads user input.
+     * @return
      */
+    public String readCommand(){
+        return scanner.nextLine();
+    }
+
+    /**
+     * Prints welcome message.
+     */
+    public void showWelcome(){
+        System.out.println("____________________________________________________________\n" +
+                " Hello! I'm Mathan\n" +
+                " What can I do for you?");
+    }
+
     public String getWelcome(){
         return "____________________________________________________________\n" +
                 " Hello! I'm Mathan\n" +
